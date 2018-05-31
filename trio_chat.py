@@ -20,7 +20,7 @@ class ClosedByPeer(Exception):
 
 async def main():
     ''' Main entry point. '''
-    host, port = '127.0.0.1', 1234
+    host, port = '0.0.0.0', 1234
     logger.info('Trio chat server listening on %s:%d', host, port)
     try:
         await trio.serve_tcp(on_connection, port, host=host)
@@ -94,8 +94,8 @@ async def chat_writer(stream, name):
             except trio.WouldBlock:
                 error = 'Connection #%d: queue is full! (dropping message)'
                 logger.error(error, connection_id)
-        # Apply an artificial rate limit to incoming messages:
-        # await trio.sleep(0.2)
+        # Introduce artificial delay.
+        await trio.sleep(0.2)
 
 
 if __name__ == '__main__':

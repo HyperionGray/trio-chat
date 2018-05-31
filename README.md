@@ -87,13 +87,13 @@ output that it only reads one message every 5 seconds. If we run the
 following output.
 
     $ python trio_chat.py
-    13:59:32 [INFO] Trio chat server listening on 127.0.0.1:1234
-    13:59:39 [INFO] Connection #0 from 127.0.0.1
-    13:59:39 [INFO] Connection #0: name set to "SlowBot 0.0.1a"
-    13:59:42 [INFO] Connection #1 from 127.0.0.1
-    13:59:42 [INFO] Connection #1: name set to "SpamBot 5000"
-    13:59:42 [ERROR] Connection #0: queue is full! (dropping message)
-    13:59:42 [ERROR] Connection #0: queue is full! (dropping message)
-    13:59:42 [ERROR] Connection #0: queue is full! (dropping message)
+    16:55:00 [INFO] Trio chat server listening on 0.0.0.0:1234
+    16:55:13 [INFO] Connection #0 from 127.0.0.1
+    16:55:13 [INFO] Connection #0: name set to "SlowBot 0.0.1a"
+    16:55:16 [INFO] Connection #1 from 127.0.0.1
+    16:55:16 [INFO] Connection #1: name set to "SpamBot 5000"
+    16:56:24 [ERROR] Connection #0: queue is full! (dropping message)
+    16:56:25 [ERROR] Connection #0: queue is full! (dropping message)
+    16:56:25 [ERROR] Connection #0: queue is full! (dropping message)
+    16:56:25 [ERROR] Connection #0: queue is full! (dropping message)
     ...
-
