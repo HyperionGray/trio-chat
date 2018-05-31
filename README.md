@@ -1,7 +1,7 @@
 # Trio Chat
 
 An extremely simple chat server based on the [Trio async
-framework](https://trio.readthedocs.io/e) as an excuse to practice writing Trio
+framework](https://trio.readthedocs.io/) as an excuse to practice writing Trio
 code. Requires Python 3.6 or later.
 
 To install dependencies, you should make a virtual environment.
