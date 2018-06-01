@@ -13,7 +13,7 @@ To install dependencies, you should make a virtual environment.
 To run the server (Python 3.6 or later):
 
     (venv) $ python trio_chat.py
-    12:07:54 [INFO] Trio chat server listening on 127.0.0.1:1234
+    12:07:54 [INFO] Trio chat server listening on 0.0.0.0:1234
     ...
 
 To connect a client, netcat to the server port. The server will prompt you for
@@ -21,8 +21,8 @@ a name to use in the chat room. Type a name and press enter. Every subsequent
 line will be treated as a chat message and broadcast to all participants.
 
     $ nc 127.0.0.1 1234
-    Welcome to Trio Chat! Enter your name:
-    Morty
+    Welcome to Trio Chat! Enter your name: Morty
+    Hi, Morty! You may now chat.
     Rick> They're just robots, Morty! It's OK to shoot them!
     Guard #1> Aah! My leg is shot off!
     Guard #2> Glenn's bleeding to death!
