@@ -1,0 +1,5 @@
+./AGENTS.md
+./README.md
+./trio_chat.py
+./spam_client.py
+./slow_client.py
